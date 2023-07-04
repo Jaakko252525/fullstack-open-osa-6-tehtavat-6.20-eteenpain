@@ -10,8 +10,6 @@ export const getAnecdotes = () =>
   axios.get(baseUrl).then(res => res.data)
 
 
-
-
 export const createAnecdote = newAnecdote => {
   console.log('newAnecdote in axios POST', newAnecdote)
   axios.post(baseUrl, newAnecdote).then(res => res.data)
